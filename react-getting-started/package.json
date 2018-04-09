@@ -1,0 +1,14 @@
+{
+  "name": "react-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "production":"browser-sync start --server --files *.*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
