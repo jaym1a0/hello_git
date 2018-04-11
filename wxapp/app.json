@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/computer_vision/computer_vision",
+    "pages/natural_language/natural_language",
+    "pages/ai/ai",
+    "pages/logs/logs",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/computer_vision/computer_vision",
+        "text": "计算机视觉",
+        "iconPath":"images/icon_speed.png",
+        "selectedIconPath":"images/icon_speed_HL.png"
+      },
+      {
+        "pagePath": "pages/natural_language/natural_language",
+        "text": "自然语言",
+        "iconPath": "images/icon_speed.png",
+        "selectedIconPath": "images/icon_seo_HL.png"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "text": "无障碍AI",
+        "iconPath": "images/icon_speed.png",
+        "selectedIconPath": "images/icon_seo_HL.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/icon_seo.png",
+        "selectedIconPath": "images/icon_seo_HL.png"
+      }
+    ]
+  }
+}
