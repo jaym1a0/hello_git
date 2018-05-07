@@ -237,4 +237,68 @@ p.grape em.dark {color: red} /*0,0,2,2*/
 继承
 
 ## 第四章 值和单位
+颜色：
+
+- 百分数：rgb(100%, 100%, 100%)
+- 整数：rgb(0, 0, 0)
+- 十六进制：#FF0000
+
+长度：
+
+- 绝对长度单位
+  - in
+  - cm
+  - mm
+  - pt
+  - pc
+- 相对长度单位
+  - em
+  - ex
+  - px
+
+inherit：继承父元素
+
+角度值：
+
+- deg
+- gred
+- rad
+
+时间值：
+
+- ms
+- s
+
+频率值：
+
+- Hz
+- MHz
+
+第五章 字体
+
+- font-family
+- font-weight
+- font-size
+- font-style
+- font-varaiant（字体变形）
+- font-stretch
+- font-size-adjust
+- font
+- font-face
+
+第六章 文本属性
+
+- text-indent
+- text-align
+- line-height
+- vertical-align:垂直对齐
+- word-spacing
+- letter-spacing
+- text-transform
+- text-decoration
+- text-shadow
+- white-space
+- direction
+
+第七章 基本视觉格式化
 
