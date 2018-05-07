@@ -274,7 +274,7 @@ inherit：继承父元素
 - Hz
 - MHz
 
-第五章 字体
+## 第五章 字体
 
 - font-family
 - font-weight
@@ -286,7 +286,7 @@ inherit：继承父元素
 - font
 - font-face
 
-第六章 文本属性
+## 第六章 文本属性
 
 - text-indent
 - text-align
@@ -300,5 +300,5 @@ inherit：继承父元素
 - white-space
 - direction
 
-第七章 基本视觉格式化
+## 第七章 基本视觉格式化
 
