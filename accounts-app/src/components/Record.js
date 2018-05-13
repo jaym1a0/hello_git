@@ -17,7 +17,9 @@ export default Record;
 
 Record.propTypes = {
     id: PropTypes.number,
-    date: PropTypes.string,
-    title: PropType.string,
-    amount: PropType.number
+    date: PropTypes.number,
+    title: PropTypes.string,
+    amount: PropTypes.number
 }
+
+

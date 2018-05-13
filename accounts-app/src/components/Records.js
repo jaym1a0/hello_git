@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Record from './Record';
 import {Table} from 'react-bootstrap';
 import {getJSON} from 'jquery';
-import axios from 'axios';
+import * as RecordsAPI from '../utils/RecordsAPI';
 
 class Records extends Component {
     constructor(props) {
@@ -33,7 +33,8 @@ class Records extends Component {
             }
         }.bind(this))
         */
-        axios.get('http://5af149cf30f9490014ead7d9.mockapi.io/api/v1/records').then(response => this.setState({
+        //axios.get('http://5af149cf30f9490014ead7d9.mockapi.io/api/v1/records').then(response => this.setState({
+        RecordsAPI.getAll().then(response => this.setState({
             records: response.data,
             isLoaded: true
         })
