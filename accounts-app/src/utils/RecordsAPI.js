@@ -8,3 +8,7 @@ export function getAll() {
 export function create(data) {
     return axios.post(`${addr}/api/v1/records`, data);
 }
+
+export function update(id, data) {
+    return axios.put(`${addr}/api/v1/records/${id}`, data)
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import * as RecordsAPI from '../utils/RecordsAPI';
 
 class Record extends Component {
     constructor(props) {
@@ -16,8 +17,19 @@ class Record extends Component {
     }
 
     handleEdit(e) {
-        e.preventDefault();
-
+        //e.preventDefault();
+        console.log(this.refs);
+        const data = {
+            date: this.refs.date.value,
+            title: this.refs.title.value,
+            amount: this.refs.amount.value
+        }
+        RecordsAPI.update(this.props.record.id, data).then(
+            response => {
+                this.props.handleEditRecord(this.props.record, response.data);
+            }).catch(
+                error => console.log(error.message)
+            );
     }
 
     recordRow() {
@@ -38,13 +50,13 @@ class Record extends Component {
         return (
             <tr key={this.props.record.id}>
                 <td>
-                    <input type="text" className='form-control' defaultValue={this.props.record.date} />
+                    <input type="text" className='form-control' defaultValue={this.props.record.date} ref='date'/>
                 </td>
                 <td>
-                    <input type="text" className='form-control' defaultValue={this.props.record.title} />
+                    <input type="text" className='form-control' defaultValue={this.props.record.title} ref='title'/>
                 </td>
                 <td>
-                    <input type="text" className='form-control' defaultValue={this.props.record.amount} />
+                    <input type="text" className='form-control' defaultValue={this.props.record.amount} ref='amount'/>
                 </td>
                 <td>
                     <button className='btn btn-info' onClick={this.handleEdit.bind(this)}>Update</button>
