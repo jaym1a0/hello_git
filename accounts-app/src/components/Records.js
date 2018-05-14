@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Record from './Record';
+import RecordForm from './RecordForm';
 import {Table} from 'react-bootstrap';
 import {getJSON} from 'jquery';
 import * as RecordsAPI from '../utils/RecordsAPI';
@@ -45,6 +46,18 @@ class Records extends Component {
             })
         )
     }
+
+    addRecord(record) {
+        console.log(record);
+        this.setState({
+            error: null,
+            isLoaded: true,
+            records: [
+                ...this.state.records,
+                record
+            ]
+        });
+    }
     render() {
         const { error, isLoaded, records } = this.state;
         if (error) {
@@ -55,12 +68,14 @@ class Records extends Component {
             return (
                 <div>
                     <h2>Records</h2>
+                    <RecordForm handleNewRecord={this.addRecord.bind(this)}></RecordForm>
                     <Table striped bordered condensed hover>
                         <thead>
                             <tr>
                                 <th>Date</th>
                                 <th>Title</th>
                                 <th>Amount</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
