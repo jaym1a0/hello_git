@@ -1,0 +1,88 @@
+* {
+	color: black;
+}
+
+h1 {
+	border: 1px solid black;
+}
+
+p {
+	display: inline;
+}
+
+em {
+	display: block;
+}
+
+.warning {
+	font-weight: bold;
+}
+
+span.warning {
+	font-style: italic;
+}
+
+.wrap {
+	display: block;
+}
+
+.warning.urgent {
+    background: silver;
+}
+
+#first-para {
+	font-weight: bold;
+	color: blue;
+}
+
+h1[class] {
+    color: silver;
+}
+
+h1 > strong {
+    color: purple;
+}
+
+html > body table + ul {
+    margin-top: 1.5em;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+/*动态伪类*/
+/*输入焦点的元素*/
+input:focus {
+    color: silver;
+}
+/*鼠标停留在a元素上*/
+a:hover {
+    color: purple;
+	font-size: 20px;
+}
+
+/*已激活的a元素*/
+a:active {
+    color: yellow;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+p:first-letter {
+    font-size: 200%;
+}
+p:first-line {
+    color: purple;
+}
+
+/*设置之前和之后的元素样式*/
+body:after {
+    content: " The End.";
+}
