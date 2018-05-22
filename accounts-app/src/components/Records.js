@@ -74,7 +74,6 @@ class Records extends Component {
         });
 
         this.setState((prevState, props) => ({records: newRecords}));
-        console.log(newRecords);
     }
 
     render() {

@@ -26,6 +26,7 @@ class Record extends Component {
         }
         RecordsAPI.update(this.props.record.id, data).then(
             response => {
+                this.setState({edit: false});
                 this.props.handleEditRecord(this.props.record, response.data);
             }).catch(
                 error => console.log(error.message)
